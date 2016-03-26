@@ -1,77 +1,449 @@
 <% content_for :features, "navbar-transparent" %>
 <div id="navbar-full">
-   <div id="navbar">
+ <div id="navbar">
    <!--
        navbar-default can be changed with navbar-ct-blue navbar-ct-azzure navbar-ct-red navbar-ct-green navbar-ct-orange
-       -->
-       <nav class="navbar navbar-ct-blue navbar-transparent navbar-fixed-top" role="navigation">
-         <div class="alert alert-success hidden">
-           <div class="container">
-               <b>Lorem ipsum</b> dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-           </div>
+     -->
+     <nav class="navbar navbar-ct-blue navbar-transparent navbar-fixed-top" role="navigation">
+       <div class="alert alert-success hidden">
+         <div class="container">
+           <b>Lorem ipsum</b> dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+         </div>
+       </div>
+
+       <div class="container">
+         <!-- Brand and toggle get grouped for better mobile display -->
+         <div class="navbar-header">
+           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+             <span class="sr-only">Toggle navigation</span>
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+           </button>
+           <a class="navbar-brand" href="#">GSDKit</a>
          </div>
 
-         <div class="container">
-           <!-- Brand and toggle get grouped for better mobile display -->
-           <div class="navbar-header">
-             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-               <span class="sr-only">Toggle navigation</span>
-               <span class="icon-bar"></span>
-               <span class="icon-bar"></span>
-               <span class="icon-bar"></span>
-             </button>
-             <a class="navbar-brand" href="#">GSDKit</a>
+         <!-- Collect the nav links, forms, and other content for toggling -->
+         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+           <ul class="nav navbar-nav">
+             <li class="active"><a href="#">Link</a></li>
+             <li class="dropdown">
+               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+               <ul class="dropdown-menu">
+                 <li><a href="#">Action</a></li>
+                 <li><a href="#">Another action</a></li>
+                 <li><a href="#">Something</a></li>
+                 <li><a href="#">Another action</a></li>
+                 <li><a href="#">Something</a></li>
+                 <li class="divider"></li>
+                 <li><a href="#">Separated link</a></li>
+               </ul>
+             </li>
+             <li>
+               <a href="javascript:void(0);" data-toggle="search" class="hidden-xs"><i class="fa fa-search"></i></a>
+             </li>
+           </ul>
+           <form class="navbar-form navbar-left navbar-search-form" role="search">
+            <div class="form-group">
+             <input type="text" value="" class="form-control" placeholder="Search...">
            </div>
+         </form>
+         <ul class="nav navbar-nav navbar-right">
+           <li><a href="#">Register</a></li>
 
-           <!-- Collect the nav links, forms, and other content for toggling -->
-           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-             <ul class="nav navbar-nav">
-               <li class="active"><a href="#">Link</a></li>
-               <li class="dropdown">
-                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-                     <ul class="dropdown-menu">
-                       <li><a href="#">Action</a></li>
-                       <li><a href="#">Another action</a></li>
-                       <li><a href="#">Something</a></li>
-                       <li><a href="#">Another action</a></li>
-                       <li><a href="#">Something</a></li>
-                       <li class="divider"></li>
-                       <li><a href="#">Separated link</a></li>
-                     </ul>
-               </li>
-               <li>
-                   <a href="javascript:void(0);" data-toggle="search" class="hidden-xs"><i class="fa fa-search"></i></a>
-               </li>
-             </ul>
-              <form class="navbar-form navbar-left navbar-search-form" role="search">
-                <div class="form-group">
-                     <input type="text" value="" class="form-control" placeholder="Search...">
-                </div>
-             </form>
-             <ul class="nav navbar-nav navbar-right">
-                   <li><a href="#">Register</a></li>
+           <li><button href="#" class="btn btn-round btn-default">Sign in</button></li>
+         </ul>
 
-                   <li><button href="#" class="btn btn-round btn-default">Sign in</button></li>
-              </ul>
-
-           </div><!-- /.navbar-collapse -->
-         </div><!-- /.container-fluid -->
-       </nav>
-    <div class="blurred-container">
-           <div class="img-src" style="background-image: url('<%= asset_path("gsdk/bg.jpg") %>')"></div>
-       </div>
-   </div><!--  end navbar -->
+       </div><!-- /.navbar-collapse -->
+     </div><!-- /.container-fluid -->
+   </nav>
+   <div class="blurred-container">
+     <div class="img-src" style="background-image: url('<%= asset_path("gsdk/bg.jpg") %>')"></div>
+   </div>
+ </div><!--  end navbar -->
 
 </div> <!-- end menu-dropdown -->
 
 <div class="main">
-   <div class="container tim-container" style="max-width:800px; padding-top:100px">
-      <h1 class="text-center">Awesome looking header <br> just for my friends<small class="subtitle">This is like a small motto before the story.</small></h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <!--     end extras -->
-   </div>
-   <div class="space"></div>
+ <div class="container tim-container" style="max-width:800px; padding-top:100px">
+  <h1 class="text-center">Awesome looking header <br> just for my friends<small class="subtitle">This is like a small motto before the story.</small></h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  <!--     end extras -->
+</div>
+<div class="space"></div>
 <!-- end container -->
 </div>
 <!-- end main -->
+<div class="wrapper">  
+  <!--   Creative Tim Branding   -->
+  <a href="http://creative-tim.com">
+   <div class="logo-container">
+    <div class="logo">
+      <img src="/hipster-as-f-cards/presentation-assets/img/new_logo.png">
+    </div>
+    <div class="brand">
+      Creative Tim
+    </div>
+  </div>
+</a>
+
+<div class="container">
+  <div class="page-description page-description-header">            
+    <div class="hipster-container">
+      <img src="/hipster-as-f-cards/presentation-assets/img/hipster_logo_white.png" />
+    </div>
+  </div>
+  
+  <div class="masonry-container">
+    
+    
+    <div class="card-box col-md-4 col-sm-6">
+      <div class="card card-with-border card-just-text" data-background="color" data-color="black" >
+        <div class="content">
+          <h4 class="title">"In the end we only <b>regret</b> the chances we didn't take."</h4>
+          <p class="description">- Hipster Quote</p>
+        </div>
+      </div> <!-- end card -->
+    </div>           
+    
+    
+    
+    <div class="card-box col-md-4 col-sm-6">
+      <div class="card">                            
+        <div class="header">
+          <img src="/hipster-as-f-cards/assets/img/lifestyle-8.jpg"/>
+          <div class="filter"></div>
+          
+          <div class="actions">
+            <button class="btn btn-round btn-fill btn-neutral btn-modern">
+              Read Article
+            </button>
+          </div>
+        </div>
+        
+        <div class="content">
+          <h6 class="category">News</h6>
+          <h4 class="title"><a href="#">Try the new hairstyle from this Barber Shop </a></h4>
+          <p class="description">When selling products it's always a good idea to go with commanding fonts that are good at showing authority and security. I feel like Raleway and Roboto do just that.</p>
+        </div>                                           
+      </div> <!-- end card -->
+    </div>
+    
+    
+    <div class="card-box col-md-4 col-sm-6">    
+      <div class="card" data-background="image" data-src="/hipster-as-f-cards/assets/img/lifestyle-1.jpg">
+        <div class="header">
+          <div class="category">
+            <h6 class="label label-danger">Hipster Tag</h6>    
+          </div>
+        </div>
+        
+        <div class="content">
+          <h4 class="title title-uppercase">
+            <a href="">Here can be your special title for this card</a>
+          </h4>
+          <p class="description">When selling products it's always a good idea to go with commanding fonts that are good at showing authority and security. I feel like Raleway and Roboto do just that.</p>
+        </div>                            
+        <div class="filter">
+          
+        </div>
+      </div> <!-- end card -->                    
+    </div>
+    
+    
+    <div class="card-box col-md-4 col-sm-6">
+      <div class="card">                                            
+        <div class="content">
+          <h6 class="category">Best stories</h6>
+          <h4 class="title"><a href="#">This is a plain Hipster Card, see for yourself</a></h4>
+          <p class="description">When selling products it's always a good idea to go with commanding fonts that are good at showing authority and security. I feel like Raleway and Roboto do just that.</p>
+        </div>                                           
+      </div> <!-- end card -->
+    </div>
+    
+    
+    <div class="card-box col-md-4 col-sm-6">  
+      <div class="card">                            
+        <div class="header">
+          <img src="/hipster-as-f-cards/assets/img/beard-1.jpg" />
+          
+          <div class="social-line social-line-visible" data-buttons="4">
+            <button class="btn btn-social btn-facebook">
+              <i class="fa fa-facebook"></i>
+            </button>
+            <button class="btn btn-social btn-twitter">
+              <i class="fa fa-twitter"></i>
+            </button>
+            <button class="btn btn-social btn-pinterest">
+              <i class="fa fa-pinterest"></i>
+            </button>
+            <button class="btn btn-social btn-google">
+              <i class="fa fa-google-plus"></i>
+            </button>
+          </div>
+        </div>
+        
+        <div class="content">
+          <h6 class="category">News</h6>
+          <h4 class="title">Use this card and see what you can achive</h4>
+          <p class="description">When selling products it's always a good idea to go with commanding fonts that are good at showing authority and security. I feel like Raleway and Roboto do just that.</p>
+        </div>  
+      </div> <!-- end card -->
+    </div>
+    
+    
+    
+    <div class="card-box col-md-4 col-sm-6">
+      <div class="card" data-background="image" data-src="/hipster-as-f-cards/assets/img/lifestyle-2.jpg">
+        <div class="header">
+          <div class="category">
+            <h6 class="label label-warning">Trending Post</h6>    
+          </div>
+          
+          <div class="social-line" data-buttons="3">
+            <button class="btn btn-social btn-facebook">
+              <i class="fa fa-facebook-square"></i> Share
+            </button>
+            <button class="btn btn-social btn-twitter">
+              <i class="fa fa-twitter"></i> Tweet
+            </button>
+            <button class="btn btn-social btn-pinterest">
+              <i class="fa fa-pinterest"></i> Pin
+            </button>
+          </div> 
+        </div>
+        
+        <div class="content">
+          <h4 class="title">Tobias Van Schneider is a German designer raised in Austria...</h4>
+          <p class="description">When selling products it's always a good idea to go with commanding fonts that are good at showing authority and security.</p>
+        </div>                            
+        <div class="filter"></div>
+      </div> <!-- end card -->    
+    </div>
+    
+    
+    
+    
+    
+    <div class="card-box col-md-4 col-sm-6">               
+      <div class="card card-with-border" data-background="image" data-src="/hipster-as-f-cards/assets/img/fashion-1.jpg">
+        <div class="header">
+        </div>
+        
+        <div class="content text-center">
+          <p class="description">When selling products it's always a good idea to go with commanding fonts that are good at showing authority and security. I feel like Raleway and Roboto do just that.</p>
+        </div>                            
+        <div class="footer text-center">
+         <a href="#" class="btn btn-danger btn-fill btn-round">Read article</a>
+       </div>
+       <div class="filter"></div>
+     </div> <!-- end card -->
+   </div>
+   
+   
+   
+   <div class="card-box col-md-4 col-sm-6">  
+    <div class="card card-just-text card-with-border" data-background="image" data-src="/hipster-as-f-cards/assets/img/lifestyle-9.jpg">
+      <div class="content">
+        <h4 class="title title-modern">"I liked nutella, triangles and outerspace way before hipsters."</h4>
+        <p class="description">- Not A Hipster</p>
+      </div>
+      <div class="filter"></div>
+    </div> <!-- end card -->                
+  </div>
+  
+  
+  <div class="card-box col-md-4 col-sm-6">               
+    <div class="card card-with-border" data-background="color" data-color="azure">
+      <div class="header">
+        <div class="icon">
+          <i class="pe-7s-radio"></i>
+        </div>
+      </div>
+      <div class="content text-center">
+        <h4 class="title title-modern">Nicecream.fm</h4>
+        <p class="description">Best vibes in the marketplace. Listen to the best music from '89. I feel like Nicecream and .fm do just that.</p>
+      </div>                      
+      <div class="footer text-center">
+        <button class="btn btn-neutral btn-round btn-fill btn-modern">Listen Now!</button>
+      </div>    
+    </div> <!-- end card -->
+  </div>
+
+
+
+
+
+  <div class="card-box col-md-4 col-sm-6">   
+    <div class="card card-with-border" data-background="color" data-color="orange">
+      <div class="content">
+        <h6 class="category">Hot Article</h6>
+        <h4 class="title">
+          <a href="#"> Try the new hairstyle from this Barber Shop</a>
+        </h4>
+        <p class="description">When selling products it's always a good idea to go with commanding fonts that are good at showing authority and security. I feel like Raleway and Roboto do just that.</p>
+      </div>                          
+    </div> <!-- end card -->
+  </div>
+
+  
+  
+  <div class="card-box col-md-4 col-sm-6">      
+    <div class="card text-center" data-background="image" data-src="/hipster-as-f-cards/assets/img/city-2.png">
+      <h4 class="title title-modern">Hipster Vacation</h4>
+      
+      <div class="content">
+        <div class="price">
+          <h6>From</h6>
+          <h4>2.799<b class="currency">$</b></h4>
+        </div>
+        <p class="description">When selling products it's always a good idea to go with commanding fonts that are good at showing authority and security.</p>      
+      </div> 
+      <div class="filter"></div>
+      <div class="footer btn-center">
+        <button class="btn btn-neutral btn-round btn-fill">Book Now!</button> 
+      </div>                            
+    </div> <!-- end card -->    
+  </div>
+  
+  
+  
+
+  <div class="card-box col-md-4 col-sm-6">
+    <div class="card card-with-border">
+      <div class="header">
+        <div class="icon">
+          <i class="pe-7s-glasses"></i>
+        </div>
+      </div>
+      <div class="content text-center">
+        <h4 class="title text-center">Hipster Glasses App</h4>
+        <p class="description">Here can be a description about the application that is for download. I feel like this app is what I need.</p>                               
+      </div>
+      <div class="footer btn-center">
+        <button class="btn btn-default btn-round btn-fill btn-info btn-modern">Download</button> 
+      </div>                           
+    </div> <!-- end card -->
+  </div>
+  
+  
+  
+  
+  
+  
+  <div class="card-box col-md-4 col-sm-6">
+    <div class="card card-just-text card-with-border" data-background="image" data-src="/hipster-as-f-cards/assets/img/music-3.jpg">
+      <div class="content">
+        <div class="filter filter-red"></div>
+        <h4 class="title title-modern">"I like the way you work it
+          No diggity, I gotta bag it up."</h4>
+          <p class="description">- Chet Faker</p>                    
+        </div>
+        
+        <div class="filter"></div>
+      </div> <!-- end card -->    
+    </div>
+    
+    
+    
+    <div class="card-box col-md-4 col-sm-6">       
+      <div class="card card-with-border" data-background="color" data-color="green">
+        <div class="header">
+          <div class="icon">
+            <i class="pe-7s-gift"></i>
+          </div>
+          
+          <div class="social-line" data-buttons="3">
+            <button class="btn btn-social btn-facebook">
+              <i class="fa fa-facebook"></i>
+            </button>
+            <button class="btn btn-social btn-twitter">
+              <i class="fa fa-twitter"></i>
+            </button>
+            <button class="btn btn-social btn-pinterest">
+              <i class="fa fa-pinterest"></i>
+            </button>
+          </div>
+          
+        </div>
+        <div class="content text-center">
+          <p class="description">Your friend <b>Michael Osborn</b> has sent you a hipster gift card.</p><br>                               
+        </div>
+        <div class="footer btn-center">
+          <button class="btn btn-neutral btn-fill btn-modern">View Gift Details</button> 
+        </div>                           
+      </div> <!-- end card -->            
+    </div>    
+    
+    
+    
+    <div class="card-box col-md-4 col-sm-6">
+      <div class="card" data-background="color" data-color="black">                            
+        <div class="header">
+          <img src="/hipster-as-f-cards/assets/img/home-1.jpg"/>
+          
+          <div class="social-line" data-buttons="2">
+            <button class="btn btn-social">
+              <i class="fa fa-facebook-square"></i> Share
+            </button>
+            <button class="btn btn-social">
+              <i class="fa fa-twitter"></i> Tweet
+            </button>
+          </div>
+        </div>
+        
+        <div class="content">
+          <h6 class="category">Interior Design</h6>
+          <h4 class="title"><a href="#">Hipster Apartment sold for $1.2 mil.</a></h4>
+          <p class="description">When selling products it's always a good idea to go with commanding fonts that are good at showing authority and security. I feel like Raleway and Roboto do just that.</p>
+        </div>                                           
+      </div> <!-- end card -->      
+    </div> 
+    
+    
+    
+    <div class="card-box col-md-4 col-sm-6">  
+      <div class="card text-center" data-background="image" data-src="/hipster-as-f-cards/assets/img/city-1.jpg">
+        <h4 class="title title-modern">Hipster City</h4>
+        
+        <div class="content">
+         <div class="price">
+          <h6>From</h6>
+          <h4>1.499<b class="currency">$</b></h4>
+        </div>      
+      </div> 
+      
+      <div class="footer btn-center">
+        <button class="btn btn-neutral btn-round btn-modern">Buy Ticket</button> 
+      </div>    
+      
+      <div class="filter filter-blue"></div>                       
+    </div> <!-- end card -->             
+  </div>
+  
+  
+</div>
+
+<div class="page-description-footer">
+  <a class="btn btn-default btn-fil btn-round btn-lg disabled" href="#">
+    Tutorial (soon)
+  </a>
+  <a class="btn btn-neutral btn-fill btn-round btn-lg" href="http://www.creative-tim.com/product/hipster-as-f-cards">
+    Download, it's Free!
+  </a>
+  
+  <div class="clearfix"></div><br>
+  
+  <h2 id="sharrreTitle">Thank you for shares!</h2>
+  <br>
+  <button id="twitter" class="btn btn-info btn-social btn-twitter btn-round btn-fill btn-wd"><i class="fa fa-twitter"></i></button>
+  <button id="facebook" class="btn btn-info btn-social btn-facebook btn-round btn-fill btn-wd"><i class="fa fa-facebook-square"></i></button>
+  
+  
+  <p>Copyright &copy; 2015 <a href="http://creative-tim.com">Creative Tim</a>, made with <i class="fa fa-heart ct-heart"></i> for a better web.</p>
+</div>
+
+
+</div> 
+</div> <!-- end wrapper -->
